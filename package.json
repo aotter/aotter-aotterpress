@@ -1,0 +1,24 @@
+{
+  "name": "aotter-aotterpress",
+  "version": "0.0.1",
+  "description": "aotter documentations",
+  "main": "index.js",
+  "authors": {
+    "name": "Max Ma",
+    "email": "max.ma@aotter.net"
+  },
+  "repository": "/aotter-aotterpress",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  },
+  "dependencies": {
+    "@vue/composition-api": "^1.4.0",
+    "vuepress-plugin-code-copy": "^1.0.6",
+    "vuepress-plugin-pangu": "^1.0.1"
+  }
+}
