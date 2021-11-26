@@ -22,6 +22,10 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
 
+  markdown: {
+    lineNumbers: true
+  },
+
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
    *
@@ -40,8 +44,8 @@ module.exports = {
         link: '/guide/',
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'Supr.Link',
+        link: '/suprlink/'
       },
       {
         text: 'VuePress',
@@ -59,13 +63,19 @@ module.exports = {
           ]
         }
       ],
-      '/config/': [
+      '/suprlink/': [
         {
-          title: 'Config',
+          title: 'Supr.Link Doc',
           collapsable: false,
           children: [
             '',
-            'test',
+          ]
+        },
+        {
+          title: 'Supr.Link 企業版文件',
+          collapsable: true,
+          children: [
+            'enterprise',
           ]
         }
       ],
