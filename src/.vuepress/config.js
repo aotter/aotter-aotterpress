@@ -1,4 +1,5 @@
 const { description } = require('../../package')
+const { trekSidebar } = require('./trek-doc-loader')
 
 module.exports = {
   base: '/aotter-aotterpress/',
@@ -19,11 +20,11 @@ module.exports = {
   head: [
     ['meta', { name: 'theme-color', content: '#C7283E' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
   ],
 
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
   },
 
   /**
@@ -32,54 +33,82 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
+    repo: 'aotter/aotter-aotterpress',
     editLinks: false,
-    docsDir: '',
-    editLinkText: '',
-    lastUpdated: false,
+    docsDir: 'src',
+    editLinks: false,
+    // custom text for edit link. Defaults to "Edit this page"
+    editLinkText: '去 GitHub 編輯',
+    lastUpdated: true,
     smoothScroll: true,
     nav: [
+      {
+        text: 'Trek',
+        link: '/trek/',
+      },
+      {
+        text: 'Supr.Link',
+        link: '/suprlink/',
+      },
       {
         text: 'Guide',
         link: '/guide/',
       },
       {
-        text: 'Supr.Link',
-        link: '/suprlink/'
-      },
-      {
         text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
-      }
+        link: 'https://v1.vuepress.vuejs.org',
+      },
     ],
     sidebar: {
-      '/guide/': [
+      '/trek/': [
         {
-          title: 'Guide',
+          title: 'Getting Start',
           collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
+          children: ['', 'summary', 'ad-slot-management'],
+        },
+        ...trekSidebar,
+        // {
+        //   title: 'Android',
+        //   collapsable: false,
+        //   children: [
+        //     'android/changelog',
+        //     'android/proguard',
+        //     {
+        //       title: 'ad-formats',
+        //       collapsable: true,
+        //       children: [
+        //         'android/ad-formats/',
+        //         'android/ad-formats/banner-ad',
+        //         {
+        //           title: 'WTF',
+        //           collapsable: true,
+        //           children: ['android/admob-mediation/basic-usage/'],
+        //         },
+        //       ],
+        //     },
+        //   ],
+        // },
       ],
       '/suprlink/': [
         {
           title: 'Supr.Link Doc',
           collapsable: false,
-          children: [
-            '',
-          ]
+          children: [''],
         },
         {
           title: 'Supr.Link 企業版文件',
-          collapsable: true,
-          children: [
-            'enterprise',
-          ]
-        }
+          collapsable: false,
+          children: ['enterprise'],
+        },
       ],
-    }
+      '/guide/': [
+        {
+          title: 'Guide',
+          collapsable: false,
+          children: ['', 'using-vue'],
+        },
+      ],
+    },
   },
 
   /**
@@ -89,6 +118,6 @@ module.exports = {
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
     ['vuepress-plugin-code-copy', true],
-    'vuepress-plugin-pangu'
-  ]
+    'vuepress-plugin-pangu',
+  ],
 }
