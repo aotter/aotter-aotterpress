@@ -1,7 +1,3 @@
-___
-title: 
-___
-
 # Ad Formats
 
 **We provide three kinds of ad formats. Check out the page links below for more information.**
