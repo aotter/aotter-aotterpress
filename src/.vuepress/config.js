@@ -240,7 +240,7 @@ module.exports = {
             },
             "web/google-ad-manager-mediation",
             "web/wordpress",
-            "web/changelog",
+            "web/changelog"
           ]
         },
         {

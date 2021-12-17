@@ -9,7 +9,7 @@ Please check out the following sections which fits your products. We are so exci
 
 <link-component title="🤖　 Android" link="../trek/android/sdk-integration/"/>
 
-<link-component title="📱　 iOS" link="../trek/iOS/sdk-integration/"/>
+<link-component title="📱　 iOS" link="../trek/ios/sdk-integration/"/>
 
 <link-component title="🖥　 Web" link="../trek/web/web-sdk/"/>
 
