@@ -7,10 +7,10 @@ description: Welcome to AotterTrek developer site
 This developer site helps publishers who want to monetize their products with AotterTrek.\
 Please check out the following sections which fits your products. We are so excited to have you with us. Enjoy your time here 😎
 
+<link-component title="🤖　 Android" link="../trek/android/sdk-integration/"/>
 
-[🤖 Android](/trek/Android/sdk-integration/)
+<link-component title="📱　 iOS" link="../trek/iOS/sdk-integration/"/>
 
-[📱  iOS](/trek/iOS/sdk-integration/)
+<link-component title="🖥　 Web" link="../trek/web/web-sdk/"/>
 
-[🖥  Web](/trek/Web/web-sdk/)
 

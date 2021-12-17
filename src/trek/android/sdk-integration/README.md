@@ -27,9 +27,11 @@ Find out what is the prerequisites and how to initialize SDK, and then check out
 
 
 
-If you're looking for Android SDK version 3, Check out the page link below.
 
 ### Legacy SDK (version 3)
+
+If you're looking for Android SDK version 3, Check out the page link below.
+
 
 <link-component title="Legacy Android SDK" link="../legacy-android-sdk/"/>
 
