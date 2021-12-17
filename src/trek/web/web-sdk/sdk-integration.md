@@ -7,9 +7,9 @@ Step 2: [Execute `AotterTrek()` ](sdk-integration.md#step-2-execute-aottertrek)\
 Step 3: [Insert \<div>\</div> tag with trek-ad attribute](sdk-integration.md#step-3-insert-less-than-div-greater-than-less-than-div-greater-than-tag-with-trek-ad-attribute)\
 [Full Example](sdk-integration.md#full-example)
 
-{% hint style="info" %}
-Note: AotterTrek SDK only supports displaying Ads on **mobile and tablet websites** currently.&#x20;
-{% endhint %}
+::: tip Notice: 
+AotterTrek SDK only supports displaying Ads on **mobile and tablet websites** currently.&#x20;
+:::
 
 ### Step 1: Including the SDK
 
@@ -33,16 +33,17 @@ Please copy the following code snippet then paste it within the`  <body>  `secti
 <!-- end: trek sdk -->
 ```
 
-{% hint style="info" %}
-Please use **your client id** for initialization which can be found in the [application list](https://trek.aotter.net/publisher/list/app). \
-We also provide test client id for receiving test ads only.
-{% endhint %}
+* #### Test Client ID:`yEFcFoJaruNorh5RqtuR`
 
-* **Test Client ID:**`yEFcFoJaruNorh5RqtuR`
+::: warning Info:
+We provide test client id as above for receiving test ads only.
+Please use **your client id** for initialization, which can be found in the [application list](https://trek.aotter.net/publisher/list/app). 
+:::
 
-{% hint style="success" %}
-Note: You can switch** test / production** mode by changing **test client id to your own client id.**
-{% endhint %}
+
+::: tip TIPS:
+You can switch **test / production** mode by changing **test client id to your own client id.**
+:::
 
 ### Step 2: Execute AotterTrek()
 
@@ -74,19 +75,19 @@ Insert the following` <div>` tag to the place you want to display Ad.
 <div id="adContainer" data-place="placement_UUID"></div>
 ```
 
-{% hint style="warning" %}
+::: warning Notice:
 Please replace`placement_UUID` with the ad place UUID in the ad slot management.
 
 For the publisher who use AotterTrek SDK for the first time and didn't get full access to ad slot management, please contact Aseal representative or [E-mail us](https://aseal.in/contactus).
-{% endhint %}
+:::
 
 ### Done! 👏🏼
 
 AotterTrek web SDK will parse `<div id="adContainer">` to an ad view.
 
-![](<../../.gitbook/assets/截圖 2021-04-01 下午3.40.15.png>)
+![](https://previews.dropbox.com/p/thumb/ABYvmi79nqxtg_Dw3DwDdqckyQdiCmSXZnpRTK8jw9VQJhf9JDmGWO-63J4wf-FZNPjIT0fpDGaN6tYmmHMRITotDnRQwxLEgBR45i-pqb1Ath1XLWT-Nj4cqUE3z7S3m0ikJzunLIEWgXXJt6H1Egl0wajRF4P_AEiWzGA1p6iMfSlKdPkMuuHWm11fyDSYwe9T-ZqDq_xeywnref4TMiRTtcoi04yBSk-M7HmkT3_ji-ic7u48EHCCkjNmAZlvlDI-Mx6gvIvoWVf3OlbECZQZ1C-4V4siUkZLDwmIxwty329pQf4tN7cEaPmfuZ2qUgfpOXATpU8OKh8y-kKcHTq9cXeFKMYcK2w5I7TFRNjNXw/p.png)
 
-## Full Example
+### Full Example
 
 ```markup
 <body>

@@ -44,13 +44,13 @@ Step 3: [Create Ad Unit and Generate Publisher Tag](google-ad-manager-mediation.
 </script>
 ```
 
-{% hint style="warning" %}
+::: warning Notice:
 Please replace`placement_UUID`with your ad place UUID.
-{% endhint %}
+:::
 
 Please refer to the screenshot below and note that "**Serve into a SafeFrame**" is not supported currently. **Do not select the checkbox**.
 
-![](../.gitbook/assets/1636013796274.jpg)
+![](https://previews.dropbox.com/p/thumb/ABbcVOxRFurS67PZJnxoBD6IrvWGbGLNj6aYig2CuCJ18t4Bdd8RbstRbF6nHEpqUPK_lWLACPeXSGKgLmJdmF0rGTdEmRJcHxMhvLlRMY20bZjcaMFdaBjHq04JvMLrkxNFYOSDSwMpb1bgFMJX7G1-yil14zQRqSMbJ1lZYk94rKcZnp3_bMuycd6_D_V9ql0GYpokWimxlcak0EKdnsy2ACeSZI8JqWyj0wt2WhMkdWivM9bbx1HUBEs5CetRa2G-WcL3B4f3HyJEm7EeMD_cgGIkIr_6otsmW5H2HHp-dlKyd1XBj94ty-V6WGVZGBbBwp57t4rktvzYrEYb9g5sBo-wYMwmIuEVoCiK-6POUw/p.jpeg)
 
 ### Step 2: Set Up Orders, Line Items
 

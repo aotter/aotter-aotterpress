@@ -10,7 +10,7 @@ This migration guide help developer who like to update AotterTrek iOS SDK to **v
 
 * [Change SDK Name](aottertrek-3.x-migration-guide.md#\_1-sdk-name-changed)
 * [Change Class Prefix ](aottertrek-3.x-migration-guide.md#\_2-class-prefix-changed)
-* [Combine Video Ad and Interactive Ad into **Supr.Ad**](aottertrek-3.x-migration-guide.md#combine-video-ad-and-interactive-ad-into-supr-ad)****
+* [Combine Video Ad and Interactive Ad into **Supr.Ad**](aottertrek-3.x-migration-guide.md#combine-video-ad-and-interactive-ad-into-supr-ad)
 * [Remove XcodeColor Logs](aottertrek-3.x-migration-guide.md#\_4-xcodecolor-logs-removed)
 * [Ad Cache Setting](aottertrek-3.x-migration-guide.md#\_5-ad-cache-setting-changed)
 

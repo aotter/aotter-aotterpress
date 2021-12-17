@@ -24,8 +24,8 @@ Step 6: [Request an Ad](banner-ad-layout.md#step-6-request-an-ad)
 
 ### **Step 2: Create `AdView`**
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 val bannerAdView = AdView(context)
 
@@ -33,9 +33,9 @@ bannerAdView.adSize = AdSize.BANNER
 
 bannerAdView.adUnitId = "YOUR_ADUNID"
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 AdView bannerAdView = new AdView(context);
 
@@ -43,13 +43,14 @@ bannerAdView.setAdSize(AdSize.BANNER);
 
 bannerAdView.setAdUnitId("YOUR_ADUNID"); 
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
+
 
 ### Step 3: Set Ad Listener
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 bannerAdView.adListener = object : AdListener() {
             override fun onAdLoaded() {
@@ -63,9 +64,9 @@ bannerAdView.adListener = object : AdListener() {
             }
         }
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 bannerAdView.setAdListener(new AdListener() {
 
@@ -83,15 +84,16 @@ bannerAdView.setAdListener(new AdListener() {
             
         });
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
+
 
 ### Step 4: Set Ad Layout
 
 Set layout in the callback function of `onAdLoaded`.
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 .....
 
@@ -102,9 +104,9 @@ override fun onAdLoaded() {
 
 .....
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 .....
 
@@ -116,13 +118,14 @@ public void onAdLoaded() {
 
 .....
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
+
 
 ### **Step 5: Create `AdRequest`**
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 val adRequest = AdRequest
     .Builder()
@@ -139,9 +142,9 @@ val adRequest = AdRequest
     .addCustomEventExtrasBundle(TrekAdmobCustomEventBanner::class.java, bundle)
     .build()
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 AdRequest adRequest = new AdRequest
     .Builder()
@@ -158,21 +161,22 @@ AdRequest adRequest = new AdRequest
     .addCustomEventExtrasBundle(TrekAdmobCustomEventBanner.class, bundle)
     .build();
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
+
 
 ### Step 6: Request an Ad
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 bannerAdView.loadAd(adRequest)
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 bannerAdView.loadAd(adRequest);
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>

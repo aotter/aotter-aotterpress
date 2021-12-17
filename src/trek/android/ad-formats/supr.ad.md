@@ -21,37 +21,37 @@ Step 5: [Register Ad View and Set Layout](supr.ad.md#step-5-register-ad-view-and
 
 You can use this method to check if the ad is expired or not.
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 adData.isExpired()
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 adData.isExpired();
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
 
-#### - is**VideoAd**
+#### - isVideoAd
 
 You can use this method to check the ad is a video ad or not.
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 adData.isVideoAd()
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 adData.isVideoAd();
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
 
 ### Step 1: Create Supr.Ad Layout
 
@@ -79,26 +79,26 @@ Build your own Supr.Ad layout or you can check out the example layout below.
 
 Notice that you should initialize `AotterTrek.TrekService` before using `trekAd`, otherwise, an exception will be thrown.
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 var trekAd:TrekAd = AotterTrek.trekService(context)
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 TrekAd trekAd = AotterTrek.INSTANCE.trekService(context);
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
 
 ### Step 3: Set Ad Status Listener Callback
 
 Please inject the **TrekAdStatusCallBack** interface in **`setTrekSatusCallBack()`** method.
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 //you have to set the method that is or not get a AdData.
 trekAd.setTrekAdStatusListener(object : TrekAdStatusCallBack {
@@ -122,67 +122,67 @@ trekAd.setTrekAdStatusListener(object : TrekAdStatusCallBack {
 
  })
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 //you have to set the method that is or not get a AdData.
-    trekAd.setTrekAdStatusListener(new TrekAdStatusCallBack() {
-            @Override
-            public void onAdError(@NotNull String message) {
-                //ad error callback
-            }
+trekAd.setTrekAdStatusListener(new TrekAdStatusCallBack() {
+        @Override
+        public void onAdError(@NotNull String message) {
+            //ad error callback
+        }
 
-            @Override
-            public void onAdLoaded(@NotNull AdData adData) {
-                //In this callback, it means that you will receive an advertisement.
-                //adData is an ad data.
-            }
+        @Override
+        public void onAdLoaded(@NotNull AdData adData) {
+            //In this callback, it means that you will receive an advertisement.
+            //adData is an ad data.
+        }
 
-            @Override
-            public void onAdClicked(@NotNull AdData adData) {
-                //In this callback, it means that the  ad was clicked.
-            }
+        @Override
+        public void onAdClicked(@NotNull AdData adData) {
+            //In this callback, it means that the  ad was clicked.
+        }
 
-            @Override
-            public void onAdImpression(@NotNull View view) {
-                //In this callback, this means that the ad has been displayed.
-            }
-     });
+        @Override
+        public void onAdImpression(@NotNull View view) {
+            //In this callback, this means that the ad has been displayed.
+        }
+    });
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
 
 ### Step 4: Request an Ad
 
 The **`setCategory()`** method is optional. You can skip it if you don't want to set it.
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 trekAd
 .setPlaceUid("YOUR_UUID")//Ex."0000-12345-6789-000"
 .setCategory("YOUR_CATEGORY_STRING_WHAT_EVERY_YOU_WANT")//Ex."news"
 .applyTrekAd()
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 trekAd
 .setPlaceUid("YOUR_UUID")//Ex."0000-12345-6789-000"
 .setCategory("YOUR_CATEGORY_STRING_WHAT_EVERY_YOU_WANT")//Ex."news"
 .applyTrekAd();
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
 
 ### Step 5: Register Ad View and Set Layout
 
-You need to register ads in**`onAdloaded()`**method to receive the impression and click events. More specifically, register ad view and set layout in **`TrekAdStatusListener()`** method of**`onAdLoaded`**.
+You need to register ads in **`onAdloaded()`** method to receive the impression and click events. More specifically, register ad view and set layout in **`TrekAdStatusListener()`** method of **`onAdLoaded`**.
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 override fun onAdLoaded(adData: AdData) {
     
@@ -199,9 +199,9 @@ override fun onAdLoaded(adData: AdData) {
        
 }
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 @Override
 public void onAdLoaded(@NotNull AdData adData) {
@@ -220,5 +220,5 @@ public void onAdLoaded(@NotNull AdData adData) {
 
 }
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>

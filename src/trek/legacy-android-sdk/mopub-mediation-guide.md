@@ -2,7 +2,7 @@
 
 ### Integrating MoPub SDK <a href="integrating-mopub-sdk" id="integrating-mopub-sdk"></a>
 
-Follow the instructions on the MoPub Site for setting up MoPub SDK.\
+Follow the instructions on the MoPub Site for setting up MoPub SDK.
 
 
 > [https://developers.mopub.com/publishers/android/get-started/](https://developers.mopub.com/publishers/android/get-started/)
@@ -65,6 +65,6 @@ final TrekAdRenderer trekAdRenderer = new TrekAdRenderer(getActivity(),
 mAdAdapter.registerAdRenderer(trekAdRenderer);
 ```
 
-{% hint style="success" %}
+::: tips Info:
 Checkout [MoPub Support Site](https://developers.mopub.com/publishers/mediation/integrate-android/) for more details.
-{% endhint %}
+:::

@@ -2,15 +2,10 @@
 
 **Please checkout the page links below for ad layout example.**
 
-{% content-ref url="native-ad-layout.md" %}
-[native-ad-layout.md](native-ad-layout.md)
-{% endcontent-ref %}
+<link-component title="Native Ad" link="../basic-usage/native-ad-layout"/>
 
-{% content-ref url="supr.ad-layout.md" %}
-[supr.ad-layout.md](supr.ad-layout.md)
-{% endcontent-ref %}
+<link-component title="Supr.Ad" link="../basic-usage/supr.ad-layout"/>
 
-{% content-ref url="banner-ad-layout.md" %}
-[banner-ad-layout.md](banner-ad-layout.md)
-{% endcontent-ref %}
+<link-component title="Banner Ad" link="../basic-usage/banner-ad-layout"/>
+
 

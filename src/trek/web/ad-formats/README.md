@@ -1,15 +1,12 @@
 # Ad Formats
 
-{% hint style="info" %}
-Note: You need to build an ad unit in AotterTrek UI console. Enter app list and manage ad-slot, choose an ad type and size.
-{% endhint %}
+::: warning Notice:
+You need to build an ad unit in AotterTrek UI console. Enter app list and manage ad-slot, choose an ad type and size.
+:::
 
 **We provide two kinds of ad formats. Check out the page links below for more information.**
 
-{% content-ref url="supr.ad.md" %}
-[supr.ad.md](supr.ad.md)
-{% endcontent-ref %}
+<link-component title="Supr.Ad" link="..//ad-formats/supr.ad/"/>
 
-{% content-ref url="banner-ad.md" %}
-[banner-ad.md](banner-ad.md)
-{% endcontent-ref %}
+<link-component title="Banner Ad" link="..//ad-formats/banner-ad/"/>
+

@@ -18,7 +18,7 @@
 
 * Fixbug: suprAd video ads preload image cause background thread crash.
 
-## 2021/06/11 release - SDK `3.6.0`&#x20;
+## 2021/06/11 release - SDK `3.6.0`
 
 * Fixbug: supr.Ad video ads background thread crash.
 

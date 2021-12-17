@@ -6,9 +6,9 @@ description: Migrating from version 3.x to version 4.x
 
 This migration guide help developer who like to update AotterTrek Android SDK to version 4.x from 3.x. If you haven't updated, we highly recommend upgrading for a better integration experience and optimized Ads.  For some seasons, you still stick to version 3. Please check the Legacy SDK page below.
 
-{% content-ref url="../legacy-android-sdk/" %}
-[legacy-android-sdk](../legacy-android-sdk/)
-{% endcontent-ref %}
+
+<link-component title="Legacy Android SDK" link="../legacy-android-sdk/"/>
+
 
 ## Key Differences
 
@@ -16,7 +16,7 @@ This migration guide help developer who like to update AotterTrek Android SDK to
 * [Callback Functions](migration-guide.md#initialization-sdk)
 * [Objects / Methods / Media View](migration-guide.md#objects-media-view-methods)
 * [Request Ads](migration-guide.md#ad-object-listener)
-* [Life Cycle](migration-guide.md#lifecycle)
+* [Life Cycle](migration-guide.md#life-cycle)
 
 ### SDK Installation <a href="install-sdk" id="install-sdk"></a>
 
@@ -38,75 +38,77 @@ implementation 'com.aotter.net:trek-sdk:3.2.1'
 
 We add a completion callback in version 4 which is useful for publishers who want to do something at this point.
 
-{% tabs %}
-{% tab title="Kotlin" %}
+
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
-// Version 4.x
-AotterTrek.initAotterService(context,"YOUR_CLIENT_ID"){
-   //aotter service init finshed callback.
-} 
+     // Version 4.x
+     AotterTrek.initAotterService(context,"YOUR_CLIENT_ID"){
+          //aotter service init finshed callback.
+     } 
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
-// Version 4.x
-AotterTrek.INSTANCE.initAotterService(context,"YOUR_CLIENT_ID", (Function1)(new Function1() {
-                        
-       public Object invoke(Object var1) {
-            this.invoke((Unit)var1);
-            return Unit.INSTANCE;
-       }
-
-       public final void invoke(@NotNull Unit it) {
-            Intrinsics.checkNotNullParameter(it, "it");
-                           
-             //aotter service init finshed callback.
-                          
-       }
-       
-}));
+     // Version 4.x
+     AotterTrek.INSTANCE.initAotterService(context,"YOUR_CLIENT_ID", (Function1)(new Function1() {
+          public Object invoke(Object var1) {
+               this.invoke((Unit)var1);
+               return Unit.INSTANCE;
+          }
+          public final void invoke(@NotNull Unit it) {
+               Intrinsics.checkNotNullParameter(it, "it");
+               //aotter service init finshed callback.  
+          }
+     }));
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+
+</code-group>
+
+
+
+
 
 In version 4, the following callbacks are still available but please notice that `onAdLoaded` callback use **AdData** model instead of the TKAdNative model.
 
-\-** **onAdError**                         **-** onAdLoaded**\
-****-** **onAdClicked**                     **-** **onAdImpression
+**-** onAdError                       **-** **onAdLoaded**\
+**-** onAdClicked                     **-** onAdImpression
 
 ### Objects / Media View / Methods
 
 #### - Ad Object
 
-In version 4, the _TKAdN_ object is deprecated and uses the **TrekAd **object instead.
+In version 4, the _TKAdN_ object is deprecated and uses the **TrekAd** object instead.
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+
+<code-block title="Kotlin" active>
 ```kotlin
 // Version 4.x
 var trekAd:TrekAd = AotterTrek.trekService(context)
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java" active>
 ```java
 // Version 4.x
 TrekAd trekAd = AotterTrek.INSTANCE.trekService(context);
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+
+</code-group>
 
 #### - Media View
 
 In version 4, we use **TrekMediaView** instead of TKMediaView.
 
-****\
 **- Methods**
 
-When setting ad listener, version 4 uses the **`setTrekAdStatusListener()`**method instead of `setAdListener()`.** **Furthermore,** **inject interface to listener use **TrekAdStatusCallBack** interface instead of _TKAdListener._
+When setting ad listener, version 4 uses the **`setTrekAdStatusListener()`** method instead of `setAdListener()`.Furthermore, inject interface to listener use **TrekAdStatusCallBack** interface instead of _TKAdListener._
 
-When register ads,_ _**`registerAdView()`** method is deprecated. In version 4, different ad types use their own register method as below.
+When register ads, **`registerAdView()`** method is deprecated. In version 4, different ad types use their own register method as below.
 
 * Native Ad: Use **`registerNativeAd()`** method
 * Supr.Ad: Use **`registerSuprAd()`** method
@@ -116,8 +118,9 @@ When register ads,_ _**`registerAdView()`** method is deprecated. In version 4, 
 
 In version 4, requesting ads use **builder style** as the following code snippet.
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+
+<code-block title="Kotlin" active>
 ```kotlin
 // Version 4.x
 trekAd
@@ -125,9 +128,9 @@ trekAd
 .setCategory("YOUR_CATEGORY_STRING_WHAT_EVERY_YOU_WANT")//Ex."news"
 .applyTrekAd()
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java" active>
 ```java
 // Version 4.x
 trekAd
@@ -135,10 +138,10 @@ trekAd
 .setCategory("YOUR_CATEGORY_STRING_WHAT_EVERY_YOU_WANT")//Ex."news"
 .applyTrekAd();
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
 
-### Life Cycle <a href="lifecycle" id="lifecycle"></a>
+</code-group>
 
-The life cycle in version 4 is automatically managed, which means that publishers don't need to do any life cycle management on their own.[\
-](https://app.gitbook.com/@a173200488/s/aotter-trek-sdk-document/)\
+### Life Cycle 
+
+The life cycle in version 4 is automatically managed, which means that publishers don't need to do any life cycle management on their own.

@@ -20,8 +20,8 @@ The following table is the user constructor parameter which including basic info
 
 ### Step 1: Create a User object instance
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 val user = User(
     "1999/9/9", //birthday
@@ -32,9 +32,9 @@ val user = User(
    jsonObject, //meta
 )
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 User user = new User(
     "1999/9/9", //birthday
@@ -43,24 +43,24 @@ User user = new User(
     "M", //gender
    "0901xxxxxxxxx",//phone
    jsonObject, //meta
-)
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
 
 ### Step 2: Invoke `setUserInfo()` Method
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 UserInfoUtils.setUserInfo(user)
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 UserInfoUtils.INSTANCE.setUserInfo(user);
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
+
 

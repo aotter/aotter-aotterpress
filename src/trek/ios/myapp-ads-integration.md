@@ -25,12 +25,12 @@ pod 'AotterTrek-iOS-SDK', '~> 3.1'
 &#x20;   3\. Add linked frameworks and libraries to your target (See the table below)\
 &#x20;   4\. Install [Google-IMA-iOS-SDK](https://developers.google.com/interactive-media-ads/docs/sdks/ios/)
 
-|   | Frameworks and Libraries |                     |               |
-| - | ------------------------ | ------------------- | ------------- |
-|   | CoreMedia                | SystemConfiguration | CoreTelephony |
-|   | WebKit                   | CoreTelephony       | AdSupport     |
-|   | AVKit                    | AVFoundation        | Foundation    |
-|   | UIKit                    |                     |               |
+| Frameworks and Libraries |                     |               |
+| ------------------------ | ------------------- | ------------- |
+| CoreMedia                | SystemConfiguration | CoreTelephony |
+| WebKit                   | CoreTelephony       | AdSupport     |
+| AVKit                    | AVFoundation        | Foundation    |
+| UIKit                    |                     |               |
 
 ## Initiation & Settings <a href="initial-sdk" id="initial-sdk"></a>
 
@@ -74,10 +74,10 @@ Implement `TKAdNativeDelegate` ->`TKMyAppAdNativeOnClicked:(TKMyAppAdNative *)ad
 }
 ```
 
-{% hint style="warning" %}
-**Notice**: This method is only available for MyApp's ads.&#x20;
-{% endhint %}
+::: tip TIPS:
+This method is only available for MyApp's ads.&#x20;
+:::
 
-{% hint style="warning" %}
+::: warning
 **Notice:** When implementing this method, the default click event will be prevented. You should manually implement click action such as open URL or browser.
-{% endhint %}
+:::

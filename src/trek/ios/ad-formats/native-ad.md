@@ -1,6 +1,6 @@
 # Native Ad
 
-## Add Native Ads to an iOS APP
+### Add Native Ads to an iOS APP
 
 The Native Ad API allows you to build a customized experience for the ads you show in your app. When using Native Ad API, instead of receiving an ad ready to be displayed, you will receive a group of **ad parameters** such as a title, an image, a call to action, and you are able to use them to construct a custom view where the ad is shown.
 
@@ -24,7 +24,7 @@ Step 4: [Remove and Release](native-ad.md#step-4-remove-and-release)
 | `callToAction`   | String | Ex: "瞭解詳情"      | Yes                   | Recommended              |
 | `sponser`        | String | Sponsored       | Yes                   | Required                 |
 
-![](<../../.gitbook/assets/截圖 2021-09-10 下午5.36.49.png>)
+![](https://previews.dropbox.com/p/thumb/ABbzIQOuUup0260TT6po_073Qkj2XUax39rHVx3gaJ1iNN8KFkLlookneoLdoAevpdE4wTs0w7Pdb8bWHkoT1EtHpFH_5S1f1ANzNnYPZvfyC4RG3rxmy8RboMTZvpT1higIYOwS7vFYGSag94MbUiYyiKiv4-3RJw1lfsdRUjDiAG5y-YxpSs2w2-MRTRdMHMfd6aVMBYi7IHcXe3HNIRYeziPPhsY0907BfEVxPX1rqAJU7e48iOw-DxKu3rGaGAbYD469eLqAlh5lFrARYiD-xgpvmsTvGZlyH_T4zSxhM33lEwj2j-87McHiv9w93dc9Sledt4LPEuikegn8axRMvi_xOnRNjhJT79I6_mYZAg/p.png)
 
 ### Functions
 

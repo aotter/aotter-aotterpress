@@ -4,8 +4,8 @@ title: Summary
 
 # Table of contents
 
-* [✨ Get Started](README.md)
-* [🎉 Ad Slot Management](ad-slot-management.md)
+* [✨  Get Started](README.md)
+* [🎉  Ad Slot Management](ad-slot-management.md)
 
 ## 🤖  Android
 
@@ -91,8 +91,6 @@ title: Summary
 * [Changelog](web/changelog.md)
 
 ## 📺 Legacy SDK
-
-***
 
 * [Legacy Android SDK](legacy-android-sdk/README.md)
   * [User Setting](legacy-android-sdk/user-setting.md)

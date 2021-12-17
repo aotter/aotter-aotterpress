@@ -32,4 +32,4 @@ Please replace`placement_UUID` with your ad place UUID.
 
 ### Done! 👏🏼
 
-![](<../../.gitbook/assets/截圖 2021-04-01 下午3.40.15.png>)
+![](https://previews.dropbox.com/p/thumb/ABZiAyS0fv8okJ0vS8FZMP5MRB-Mner5PGTarUnoQ9P1d8EZzHtz0qEuZ2ZRTmjSFU-ZUI3G5hxC1sz17e4gbaonud-cP-v2uQtwurSIdln1X3HGbKfasyHesFPhVyzVJlhnG7_dH1AvYBM-1RPo4b8fB-oUZNJ1KuGTdT1EqvVFemGtSKWx_jgvsX5zpgY0YJ_IE_KDi75xttiii-PjRhvPnfoWxgSnFGV26MkdzeQbElogxKwJtT8GSYbVDgj_30t_LNiW3mlVFSIP9H0D15xvJ0PReGKASdM8HwrjgnMy5ZOb9do5GXitZsfvxY0xfKCtqXpLDQ_zxZ9xtjLv8fzaJPdKLaK-ZLmnX-x-bAbOww/p.png)

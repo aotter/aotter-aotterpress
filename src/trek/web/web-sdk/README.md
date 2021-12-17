@@ -4,25 +4,21 @@ Find out what is the prerequisites and how to initialize SDK, and then check out
 
 ### Prerequisites
 
-{% content-ref url="prerequisites.md" %}
-[prerequisites.md](prerequisites.md)
-{% endcontent-ref %}
+<link-component title="Prerequisites" link="../web-sdk/prerequisites/"/>
+
 
 ### Install SDK
 
-{% content-ref url="sdk-integration.md" %}
-[sdk-integration.md](sdk-integration.md)
-{% endcontent-ref %}
+<link-component title="SDK Integration" link="../web-sdk/sdk-integration/"/>
+
 
 ### Ad Formats
 
-{% content-ref url="../ad-formats/" %}
-[ad-formats](../ad-formats/)
-{% endcontent-ref %}
+<link-component title="Ad Formats" link="../ad-formats/"/>
+
 
 ### Changelogs
 
-{% content-ref url="../changelog.md" %}
-[changelog.md](../changelog.md)
-{% endcontent-ref %}
+<link-component title="Change Log" link="../changelog/"/>
+
 

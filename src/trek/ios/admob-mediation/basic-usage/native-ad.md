@@ -3,7 +3,7 @@
 Follow these steps to build a native ad layout that fits your application and then requests it.
 
 Step 1: [Initialize AotterTrek SDK](native-ad.md#step-1-initialize-aottertrek-sdk) \
-Step 2: [Customize _TableViewCell_ / _CollectionViewCell_ / _ViewController_](native-ad.md#step-2-customize-tableviewcell-collectionviewcell-viewcontroller)__
+Step 2: [Customize _TableViewCell_ / _CollectionViewCell_ / _ViewController_](native-ad.md#step-2-customize-tableviewcell-collectionviewcell-viewcontroller)
 
 ### Step 1: Initialize AotterTrek SDK&#x20;
 
@@ -36,17 +36,16 @@ _File: AppDelegate.m_
 
 Here we customize **TableViewCell** : `TrekNativeAdTableViewCell`
 
-{% hint style="warning" %}
-**Note:** **View Class** depends on the GoogleMobileAds SDK version\
+::: warning Notice:
+**View Class** depends on the GoogleMobileAds SDK version\
 GoogleMobileAds SDK version 8 and above: `GADNativeAdView`&#x20;
-{% endhint %}
+:::
 
-![](../../../.gitbook/assets/109942288-03671200-7d0f-11eb-8606-f5689a98ecec.png)
+![](https://previews.dropbox.com/p/thumb/ABZvB9M6HNku5Yi9t_goFeoAT1PjK168ecDM3svsimoEFheCWzxy1mwJqcNGjINp4SeBLr-GzSYk-bhMUVSc9AGBxtRDNHTxpj5Gn1_1_mSLWWyGGI3Sf1eauXKFke5BMLmY3sKPr_y21ACSDpRjaCvQlMliMsigLlJh5n30lYkf8mKy8LgGffc7H1AyjittNC58SOsQmtK_7mfIwO0hJlnLuZWdtyp1iESF4IlXqlWbmt29zPEGivKFQNdFePYDmdK-ymzdYLfKkK4cGaCt6fVL77T_dY7K5kczwOH222wQ087VEpGY_GNWOP9xf775htSIo4LCDQlpRfYLxG8coM7rJWVpSUUEaA_BkQ8uoSte5g/p.png)
 
 **- TrekNativeAdTableViewCell**
 
-{% tabs %}
-{% tab title="TrekNativeAdTableViewCell.h" %}
+::: details TrekNativeAdTableViewCell.h
 \- **GoogleMobileAds SDK version 8 and above**
 
 ```swift
@@ -66,9 +65,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_ASSUME_NONNULL_END
 ```
-{% endtab %}
+:::
 
-{% tab title="TrekNativeAdTableViewCell.m" %}
+::: details TrekNativeAdTableViewCell.m
 ### Declare data method
 
 #### - **GoogleMobileAds SDK version 8 and above** <a href="declare-a-gadunifiednativead-data-method" id="declare-a-gadunifiednativead-data-method"></a>
@@ -117,17 +116,16 @@ NS_ASSUME_NONNULL_END
                                                                         views:viewDictionary]];
 }
 ```
-{% endtab %}
+:::
 
-{% tab title="TrekNativeAdTableViewCell.xib" %}
-![TrekNativeAdTableViewCell](../../../.gitbook/assets/109943071-c2233200-7d0f-11eb-894f-2ccd4ff701ee.png)
-{% endtab %}
-{% endtabs %}
 
-\-** YourViewController**
+::: details TrekNativeAdTableViewCell.xib
+![TrekNativeAdTableViewCell](https://previews.dropbox.com/p/thumb/ABYfxVsZ86MKin-JJ5_U3Pd7jmtEkpLZNWRVRAjys3NtPmBHRC0GbfeAMIqPmJYTERIERqJHTHSEKsYBbbZBTSAj1Q1sj8dfuhJ_4KW8fvvj5UHkjfghPRGO-IV4-CBhH0sqemAeRX6xgAu5t4m6ek2OWaLvyqV4Wcp4pmEjqYqTjAf8ec-68mmDAkuwH6v4M2PrNRypmY6ZiUwy1Hw8dbBiQ9xHCsAj3uuJdSIau4jUNzzU6Wyl5FkYZB-qa0gt7rexvPVN7kLJMglV9h0XSP0h2ianxhznwJstM51rmP1EzmDdofCusyvXMcb3Nadz3em4pbizxBUosb7XW_3qmlYQZSLKruBwC9YX6JyWYGHO0A/p.png)
+:::
 
-{% tabs %}
-{% tab title="YourViewController.m" %}
+\- **YourViewController**
+
+::: details YourViewController.m
 Rendering the ad view process:
 
 #### **- GoogleMobileAds SDK version 8 and above**
@@ -276,14 +274,14 @@ static NSInteger googleMediationNativeAdPosition = 6;
 
 @end
 ```
+:::
 
-{% hint style="warning" %}
-Note: In`YourViewController.m` - `adLoaderLoadRequest`\
+::: warning Notice:
+In`YourViewController.m` - `adLoaderLoadRequest`\
 When requesting ads, the label parameter should be corresponding to the label set in the AdMob dashboard.
-{% endhint %}
+:::
 
-![](../../../.gitbook/assets/132634590-ddef116f-0b74-4877-a218-f9c232a28045.png)
+![](https://previews.dropbox.com/p/thumb/ABZgZQDNItaU9dkRuRdG3M3HEEMPm1BvtCGkE4mcfT6k9UMlt8TNv17cKRiH2iH4_xSQJSL0-ofSa-un7DlA0m8ZBATwVuEGZKSjIkPH2i6JlgBRsNzyic4Ci_BItHh73n19aQ9cdELtt1ZZwGcMq5FgmYkn2HYLbl3hq1ZvrEFi9iM1M46I8yTGsSJz9qT-aosZYwgkNLLDtaLa6QfWZ8Ks8Xug5o-eqVKW0sS2LGm7XegTxOe9ilC__KOsPnsyRUfdncnVeCe0ewnGgL5L7y1IkKkdLlHEdxfkqsvQ-YGNll07DQWGlRqAHVpRkczExLiCDsufodp9m9jDqenhzhlwu857AZ_561cZhhPh-WeM7g/p.png)
 
-![](../../../.gitbook/assets/132634585-ad98552e-3239-4f4d-abc4-842163179328.png)
-{% endtab %}
-{% endtabs %}
+![](https://previews.dropbox.com/p/thumb/ABbbKjdlVdpVaFaMii3rbYfQsEH1Z9T8bpF6m79-7qFSmS3t4f2Ypuwo6w7V3pMT1syqRyy2-6lClE10yW2mPLF489Ygj62rsUahigwkcL6gmmNDZMH8IoBOGGVuWmetf9Mfmgm75-v84Zfs7ibdEzf7ocUV7gW9QzagudoeJOFG4jB1SRjVA0blRZoseijKBWLYGefQ2-y4SCVENEOuzAThjBLGlrv67DaeEhquT7994IHT7g5bKP7sm4wrAw3J53mG3FRQ3A7ee9qlIboR5bx7PawXh6aH2-FjgFF7_yKrnTGDKtaDljWdM0OsZgMPx3A3QRwjBN09AD2rJc_689uVVa_gGpe546AR4JAoUJEBDw/p.png)
+

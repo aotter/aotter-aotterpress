@@ -6,31 +6,24 @@ AdMob Mediation is a feature that lets you serve ads to your apps from multiple 
 
 For more information about prerequisites, check the page link below.
 
-{% content-ref url="prerequisites.md" %}
-[prerequisites.md](prerequisites.md)
-{% endcontent-ref %}
+<link-component title="Prerequisites" link="../admob-mediation/prerequisites/"/>
+
 
 ### Installation
 
 For more information about installation, check the page link below.
 
-{% content-ref url="installation.md" %}
-[installation.md](installation.md)
-{% endcontent-ref %}
+<link-component title="Installation" link="../admob-mediation/installation/"/>
+
 
 ### Base Usage
 
 Please check out the page links below for ad layout examples.
 
-{% content-ref url="basic-usage/native-ad-layout.md" %}
-[native-ad-layout.md](basic-usage/native-ad-layout.md)
-{% endcontent-ref %}
+<link-component title="Native Ad" link="../admob-mediation/basic-usage/native-ad-layout/"/>
 
-{% content-ref url="basic-usage/banner-ad-layout.md" %}
-[banner-ad-layout.md](basic-usage/banner-ad-layout.md)
-{% endcontent-ref %}
+<link-component title="Supr.Ad" link="../admob-mediation/basic-usage/supr.ad-layout/"/>
 
-{% content-ref url="basic-usage/supr.ad-layout.md" %}
-[supr.ad-layout.md](basic-usage/supr.ad-layout.md)
-{% endcontent-ref %}
+<link-component title="Banner Ad" link="../admob-mediation/basic-usage/banner-ad-layout"/>
+
 

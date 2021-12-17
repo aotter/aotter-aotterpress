@@ -2,4 +2,4 @@
 
 Please check out the link below for Demo App Example.
 
-### GitHub Repository: [https://github.com/aotter/aotter-trek-android-kotlin-demo](https://github.com/aotter/aotter-trek-android-kotlin-demo)
+### <link-component title="GitHub Repository - DEMO APP" link="https://github.com/aotter/aotter-trek-android-kotlin-demo"/>

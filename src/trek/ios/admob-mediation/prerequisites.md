@@ -24,4 +24,4 @@ Please follow the format: `{"adType":"xxx", "adPlace":"xxx"}`&#x20;
 
 Take native ad as an example, its configuring will be set like below:
 
-![](../../.gitbook/assets/Admob\_native\_noTestUUID.png)
+![](https://previews.dropbox.com/p/thumb/ABZkzFDgbvznl7XkGIDayL1cMnMgFtqsiBntj6ALON8PSqlmN0iLo9xFk9q_ZhvjHpPNPf2r58MoCZUWlUlo_tES6sIuoSbogaKEO1G1zoQZ5hLu9TPrqDaXpqLZIG7RI3OmppdVMMeKy9DdToTiSDHkaerbuWa2oOGfovzTKd_JQz3nhhqOuFyhhjEPl8lmGrlGJJvSKPEYT0gB6xYBKfD6HDDj6-o5R7CSqCUhkIttlKPlVlBtG-2c3-x8pxUnY_KJY6_iR4KoIHM-TuIdusm9O4toSWXNEQqvMyXZPuYo9JvWlmPxN2Ev9G9QLOFAx7a08Sc54ajtdV26BN9f3Dby68V2akMqZdbPCzjZ6i6Aig/p.png)
