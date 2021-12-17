@@ -2,15 +2,9 @@
 
 **Please check out the page links below for ads layout examples.**
 
-{% content-ref url="native-ad.md" %}
-[native-ad.md](native-ad.md)
-{% endcontent-ref %}
+<link-component title="Native Ad" link="../basic-usage/native-ad"/>
 
-{% content-ref url="supr.ad.md" %}
-[supr.ad.md](supr.ad.md)
-{% endcontent-ref %}
+<link-component title="Supr.Ad" link="../basic-usage/supr.ad"/>
 
-{% content-ref url="banner-ad.md" %}
-[banner-ad.md](banner-ad.md)
-{% endcontent-ref %}
+<link-component title="Banner Ad" link="../basic-usage/banner-ad"/>
 

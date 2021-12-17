@@ -6,26 +6,26 @@ Starting from iOS 14, it will be giving users the choice to block the IDFA ident
 
 This guide outlines the changes needed for iOS 14 support.
 
-## Request AppTrackingTransparency for IDFA <a href="request-apptrackingtransparency-for-idfa" id="request-apptrackingtransparency-for-idfa"></a>
+## Request AppTrackingTransparency for IDFA 
 
-### Step 1. Link AppTrackingTransparency.framework in your project. <a href="step-1-link-apptrackingtransparencyframework-in-your-project" id="step-1-link-apptrackingtransparencyframework-in-your-project"></a>
+### Step 1. Link AppTrackingTransparency.framework in your project.
 
 As the framework is iOS14+, you need to link this feature with the framework at beta Xcode (12+)
 
-### Step 2. Add User Tracking Usage Description in _info.plist_ <a href="step-2-add-user-tracking-usage-description-in-infoplist" id="step-2-add-user-tracking-usage-description-in-infoplist"></a>
+### Step 2. Add User Tracking Usage Description in _info.plist_
 
 Just like the usage of Camera / Album / Location, you need to provide a message telling users that why your app needs permission.
 
-```
+```objectivec
 <key>NSUserTrackingUsageDescription</key>
 <string>This identifier will be used to deliver personalized ads to you.</string>
 ```
 
-### Step 3. Request permission before request ads. <a href="step-3-request-permission-before-request-ads" id="step-3-request-permission-before-request-ads"></a>
+### Step 3. Request permission before request ads. 
 
 To present the authorization request, call [`requestTrackingAuthorizationWithCompletionHandler:`](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/3547037-requesttrackingauthorization). We recommend waiting for the completion callback prior to loading ads so that if the user grants the App Tracking Transparency permission, the Interactive Media Ads SDK can use the IDFA in ad requests.
 
-```
+```objectivec
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
 #import <AdSupport/AdSupport.h>
 

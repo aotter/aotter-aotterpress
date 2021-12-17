@@ -31,6 +31,6 @@ allprojects {
 
 Please add the following code snippet in your AndroidManifest.XML
 
-```
+```XML
 <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
 ```

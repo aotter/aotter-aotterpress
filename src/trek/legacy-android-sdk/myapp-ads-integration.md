@@ -9,7 +9,7 @@
 
 In order to use that repository, you need to refer to it in the app's project-level `build.gradle` file. Open yours and looking for an `allprojects` section:
 
-* **Example project-level build.gradle (excerpt)**
+* **Example project-level build.gradle (except)**
 
 ```java
 allprojects {

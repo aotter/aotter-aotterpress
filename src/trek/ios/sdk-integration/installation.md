@@ -36,9 +36,9 @@ pod 'AotterTrek-iOS-SDK', '3.6.4'
 Please use **your client id** for initialization which can be found in the [application list](https://trek.aotter.net/publisher/list/app). \
 We also provide test client id for receiving test ads only.
 
-{% hint style="success" %}
-Note: You can switch** test / production** mode by changing **test client id to your own client id.**
-{% endhint %}
+::: tip TIPS:
+You can switch **test / production** mode by changing **test client id to your own client id.**
+:::
 
 * Test Client ID: `21tgwWwuzFYiD4ko5Klr`
 * Test\_Client Secret: `fD8P20gzWYrlbuwWklRkicYcNwlWZSZwV+iHj3TzGSzzyfgTWmVR5trs5F1Dp+x9tX2jxq44`
@@ -81,11 +81,11 @@ When executing Supr.Ad, a multimedia ad, you might receive video ads. You might 
 
 In the code snippet above, we choose `AVAudioSessionCategoryAmbient` which means audio from other apps mixes with audio from ads.
 
-## Next Steps
+### Next Steps
 
 * Follow our guides for integrating different Ad Formats in your app:
-  * [Native Ad](../ad-formats/banner-ad.md)
-  * [Supr.Ad](../ad-formats/supr.ad.md)
-  * [Banner Ad](../ad-formats/banner-ad.md)
+  * <link-component title="Native Ad" link="../ad-formats/native-ad"/>
+  * <link-component title="Supr.Ad" link="../ad-formats/supr.ad"/>
+  * <link-component title="Banner Ad" link="../ad-formats/banner-ad"/>
 * Or you would like to check out the demo app:
-  * [Demo](demo-working.md)
+  * <link-component title="Demo" link="../sdk-integration/demo-working"/>

@@ -1,10 +1,10 @@
 # Native Ad
 
-## Add Native Ads to an Android APP
+### Add Native Ads to an Android APP
 
 The Native Ad API allows you to build a customized experience for the ads you show in your app. When using Native Ad API, instead of receiving an ad ready to be displayed, you will receive a group of **ad parameters** such as a title, an image, a call to action, and you are able to use them to construct a custom view where the ad is shown.\
 \
-****Follow these steps to build a native ad layout that fits your application and then requests it.
+Follow these steps to build a native ad layout that fits your application and then requests it.
 
 Step 1: [Create Native Ad Layout](native-ad.md#step-1-create-native-ad-layout)\
 Step 2: [Create `trekAd` Object Instance](native-ad.md#step-2-create-trekad-object-instance)\
@@ -25,25 +25,26 @@ Step 5: [Register Ad View and Set Layout](native-ad.md#step-5-register-ad-view-a
 | `callToAction`   | String | Ex: "瞭解詳情"      | Yes                    | Recommended               |
 | `sponsor`        | String | Sponsored       | Yes                    | Required                  |
 
-![](<../../.gitbook/assets/截圖 2021-09-10 下午5.36.49.png>)
+
+![and_nativead](https://previews.dropbox.com/p/thumb/ABbOrsK4EBA95YGunbhvO8OZg5DtqpqR5OZeUZx2kCNMYaWA8kaK0iOHurN-qi61BEhvP7J0gaqzZy5KxHU377T_8gl0DOhMvw7EtY_xsbIqyi_EjggdNQK9dxKY1CAGCgtoMGe6CiuK3y_GacqPHULx9KJKtviWYzupBfHF005IawqK-0xvZBOj-k3aJFzKD-I91HYBAuNYzdGCTCqGqrrlBqeRuOuL72Vi2TaFRZPuW5V9Rr1KulVOs4njgTmD9aIVE_HiG3hZBwOIxM79ekt31EtCGyvn4efYjE7qG6XBgOpp6lHPCYo5QmHF24Sv4_oPVPPKqt7kH48ri1PUnCh20OB0kukW5GwETzMbHcgH4A/p.png)
 
 #### - isExpired
 
 You can use this method to check if the ad is expired or not.
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 adData.isExpired()
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 adData.isExpired();
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
 
 ### Step 1: Create Native Ad Layout
 
@@ -92,26 +93,26 @@ Build your own native ad layout or you can check out the example layout below.
 
 Notice that you should initialize `AotterTrek.TrekService` before using `trekAd`, otherwise, an exception will be thrown.
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 var trekAd:TrekAd = AotterTrek.trekService(context)
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 TrekAd trekAd = AotterTrek.INSTANCE.trekService(context);
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
 
 ### Step 3: Set Ad Status Listener Callback
 
 Please inject the **TrekAdStatusCallBack** interface in **`setTrekStatusCallBack()`** method.
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 //you have to set the method that is or not get a AdData.
 trekAd.setTrekAdStatusListener(object : TrekAdStatusCallBack {
@@ -135,67 +136,67 @@ trekAd.setTrekAdStatusListener(object : TrekAdStatusCallBack {
 
  })
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 //you have to set the method that is or not get a AdData.
-    trekAd.setTrekAdStatusListener(new TrekAdStatusCallBack() {
-            @Override
-            public void onAdError(@NotNull String message) {
-                //ad error callback
-            }
+trekAd.setTrekAdStatusListener(new TrekAdStatusCallBack() {
+        @Override
+        public void onAdError(@NotNull String message) {
+            //ad error callback
+        }
 
-            @Override
-            public void onAdLoaded(@NotNull AdData adData) {
-                //In this callback, it means that you will receive an advertisement.
-                //adData is an ad data.
-            }
+        @Override
+        public void onAdLoaded(@NotNull AdData adData) {
+            //In this callback, it means that you will receive an advertisement.
+            //adData is an ad data.
+        }
 
-            @Override
-            public void onAdClicked(@NotNull AdData adData) {
-                //In this callback, it means that the  ad was clicked.
-            }
+        @Override
+        public void onAdClicked(@NotNull AdData adData) {
+            //In this callback, it means that the  ad was clicked.
+        }
 
-            @Override
-            public void onAdImpression(@NotNull View view) {
-                //In this callback, this means that the ad has been displayed.
-            }
-     });
+        @Override
+        public void onAdImpression(@NotNull View view) {
+            //In this callback, this means that the ad has been displayed.
+        }
+    });
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
 
 ### Step 4: Request an Ad
 
 The **`setCategory()`**method is optional. You can skip it if you don't want to set it.
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 trekAd
 .setPlaceUid("YOUR_UUID")//Ex."0000-12345-6789-000"
 .setCategory("YOUR_CATEGORY_STRING_WHICH_YOU_WANT")//Ex."news"
 .applyTrekAd()
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 trekAd
 .setPlaceUid("YOUR_UUID")//Ex."0000-12345-6789-000"
-.setCategory("YOUR_CATEGORY_STRING_WHAT_EVERY_YOU_WANT")//Ex."news"
+.setCategory("YOUR_CATEGORY_STRING_WHICH_YOU_WANT")//Ex."news"
 .applyTrekAd();
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
 
 ### Step 5: Register Ad View and Set Layout
 
 You need to register ads in **`onAdloaded()`**method to receive the impression and click events. More specifically, register ad view and set layout in **`TrekAdStatusListener()`** method of**`onAdLoaded`**.
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 override fun onAdLoaded(adData: AdData) {
     
@@ -220,9 +221,9 @@ override fun onAdLoaded(adData: AdData) {
        
 }
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 @Override
 public void onAdLoaded(@NotNull AdData adData) {
@@ -249,5 +250,5 @@ public void onAdLoaded(@NotNull AdData adData) {
 
 }
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>

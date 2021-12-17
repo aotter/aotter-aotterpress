@@ -2,9 +2,9 @@
 
 If you are a publisher and also own a website, you might want to track the conversion rate. After integrating AotterTrek SDK on every page of your website, it can record a series of user's behavior when they click an ad. Therefore, you can calculate the conversion rate and optimize the advertising strategy.
 
-{% hint style="warning" %}
-Notice that this feature will not work properly when the page is **redirect-needed**.
-{% endhint %}
+::: tip Notice:
+This feature doesn't work properly when the page is **redirect-needed**.
+:::
 
 ### How it works 🤔 ?
 

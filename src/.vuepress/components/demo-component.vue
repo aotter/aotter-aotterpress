@@ -1,6 +1,8 @@
 <template>
   <p class="demo">
-    {{ msg }}
+    <a v-bind:href="link">
+      {{ msg }}
+    </a>
   </p>
 </template>
 
@@ -8,7 +10,8 @@
   export default {
     data() {
       return {
-        msg: 'Hello this is <demo-component>'
+        msg: 'Hello this is <demo-component>',
+        link: 'https://google.com'
       }
     }
   }

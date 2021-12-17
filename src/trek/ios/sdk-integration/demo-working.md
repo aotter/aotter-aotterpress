@@ -2,4 +2,5 @@
 
 Please check out the link for Demo App Example.
 
-### GitHub Repository: [https://github.com/aotter/AotterTrek-iOS-SDK](https://github.com/aotter/AotterTrek-iOS-SDK)
+### <link-component title="GitHub Repository - DEMO APP" link="https://github.com/aotter/AotterTrek-iOS-SDK"/>
+

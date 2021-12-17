@@ -45,5 +45,5 @@
 
 ## 2021/06/15 release - SDK `4.0.0`
 
-* new released Android SDK
+* New released Android SDK
 

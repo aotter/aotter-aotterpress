@@ -12,9 +12,9 @@ Step 5: [Request an Ad](supr.ad-layout.md#step-5-request-an-ad)
 
 #### **Example Supr.Ad layout**
 
-{% hint style="warning" %}
-**Notice: Please use `NativeAdView` as the container of your layout**
-{% endhint %}
+::: tip TIPS:
+**Please use `NativeAdView` as the container of your layout**
+:::
 
 ```kotlin
 <com.google.android.gms.ads.nativead.NativeAdView
@@ -33,8 +33,8 @@ Step 5: [Request an Ad](supr.ad-layout.md#step-5-request-an-ad)
 
 ### Step 2: Create `AdLoader`
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 val adLoader = AdLoader
     .Builder(context, "YOUR_ADUNIT")
@@ -43,9 +43,9 @@ val adLoader = AdLoader
      }
     .build()
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 AdLoader  adLoader = new AdLoader.Builder(context,"YOUR_ADUNIT")
     .forNativeAd(new NativeAd.OnNativeAdLoadedListener() {
@@ -56,15 +56,15 @@ AdLoader  adLoader = new AdLoader.Builder(context,"YOUR_ADUNIT")
     })
 .build();
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
 
 ### Step 3: Set Ad Layout and Bind Ad View
 
 Set layout and bind ad view in the callback function of `forNativeAd`.
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 .....
 
@@ -88,9 +88,9 @@ forNativeAd { nativeAd ->
 
 .....
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 .....
 
@@ -119,13 +119,13 @@ forNativeAd { nativeAd ->
 
 .....
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
 
 ### **Step 4: Create `AdRequest`**
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 val adRequest = AdRequest
     .Builder()
@@ -142,9 +142,9 @@ val adRequest = AdRequest
     .addCustomEventExtrasBundle(TrekAdmobCustomEventNative::class.java, bundle)
     .build()
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 AdRequest adRequest = new AdRequest
     .Builder()
@@ -161,21 +161,23 @@ AdRequest adRequest = new AdRequest
     .addCustomEventExtrasBundle(TrekAdmobCustomEventNative.class, bundle)
     .build();
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
+
 
 ### **Step 5: Request an Ad**
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 adLoader.loadAd(adRequest)
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 adLoader.loadAd(adRequest);
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
+

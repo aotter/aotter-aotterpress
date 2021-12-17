@@ -2,8 +2,7 @@
 
 The tab below explains different kinds of AotterTrek Web APIs. Please take a look if needed.
 
-{% tabs %}
-{% tab title="INIT" %}
+::: details AotterTrek('init')
 ## AotterTrek('init', 'CLIENT\_ID')
 
 > Initialize AotterTrek SDK
@@ -12,7 +11,7 @@ The tab below explains different kinds of AotterTrek Web APIs. Please take a loo
 
 | order | name       | type     | note                           |
 | ----- | ---------- | -------- | ------------------------------ |
-| 1     | init       | `string` | Accept "**init**"** **only     |
+| 1     | init       | `string` | Accept "**init**" only     |
 | 2     | CLIENT\_ID | `string` | Your client id from AotterTrek |
 
 #### Example
@@ -20,10 +19,11 @@ The tab below explains different kinds of AotterTrek Web APIs. Please take a loo
 ```javascript
 AotterTrek('init', 'CLIENT_ID');
 ```
-{% endtab %}
+:::
 
-{% tab title="ADTYPE" %}
-## AotterTrek(ADTYPE, OPTIONS)
+
+::: details AotterTrek('ADTYPE')
+## AotterTrek('ADTYPE', OPTIONS)
 
 > Send HTTP request to get ad and injecting response data to specific element.
 
@@ -62,9 +62,9 @@ AotterTrek('suprAd', {
     }
 })
 ```
-{% endtab %}
+:::
 
-{% tab title="SETUSER" %}
+::: details AotterTrek('setUser')
 ## AotterTrek('setUser', USER)
 
 > Ref:[ ](user-setting.md)[User info Setting](user-setting.md)
@@ -73,7 +73,7 @@ AotterTrek('suprAd', {
 
 | order | name    | type     | note                          |
 | ----- | ------- | -------- | ----------------------------- |
-| 1     | setUser | `string` | Accept "**setUser**"** **only |
+| 1     | setUser | `string` | Accept "**setUser**" only |
 | 2     | USER    | `object` | See User below                |
 
 #### User
@@ -101,9 +101,9 @@ AotterTrek('suprAd', {
   selector: '#supr-ad'
 });
 ```
-{% endtab %}
+:::
 
-{% tab title="TKADN" %}
+::: details AotterTrek('tkadn')
 ## AotterTrek('tkadn', EVENT)
 
 > Ref: [Tkadn](tkadn.md)
@@ -112,7 +112,7 @@ AotterTrek('suprAd', {
 
 | order | name  | type     | note                         |
 | ----- | ----- | -------- | ---------------------------- |
-| 1     | tkadn | `string` | Accept "**tkadn**"** **only. |
+| 1     | tkadn | `string` | Accept "**tkadn**" only. |
 | 2     | EVENT | `string` | See Standard Events below.   |
 
 #### Standard Events
@@ -133,9 +133,9 @@ function reportEvent(){
     AotterTrek('tkadn', 'FormSubmit');
 }
 ```
-{% endtab %}
+:::
 
-{% tab title="SEND" %}
+::: details AotterTrek('send')
 ## AotterTrek('send')
 
 > Send an event for trek to analytic page information.
@@ -145,8 +145,7 @@ function reportEvent(){
 ```javascript
 AotterTrek('send');
 ```
-{% endtab %}
-{% endtabs %}
+:::
 
 
 

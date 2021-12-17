@@ -19,7 +19,7 @@ By sending user's info to AotterTrek, our system will analyze data and optimize 
 </script>
 ```
 
-We provide the following attributes. Except for the marked ones, all of the data will be **hashed **before send to AotterTrek server.
+We provide the following attributes. Except for the marked ones, all of the data will be **hashed** before send to AotterTrek server.
 
 | Key            | Guidelines                                                                                                                                                                                   |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -39,4 +39,4 @@ We provide the following attributes. Except for the marked ones, all of the data
 
 ### Test Result
 
-![](<../../.gitbook/assets/截圖 2021-03-26 上午11.19.27.png>)
+![](https://previews.dropbox.com/p/thumb/ABZCW6VeHJ4rssvCJGBqyv_Q6iKJseutY1pI0Q2EZihyZI5TolPZqBd-ZLlG6f2a_C1iw61H8-LNkc04xXC7ljgMY08nclEEbk2hDg8Wm3eOXJSwOMTYJfkNtZu1hyVkFRO8z6H-GFGYdS6WRU0QITZEioaQ_HE0kM22GgjzKBMu-eoyKZ53-GkOPDbSK4TALf0iN6_rUi67IpVfMsSqbx0oH6EIz_TBlZhB2eZMTmaWCkS0Ao4hiS_A0VJjQs2S5CJCSRFBxAoyCySs3xdgpXLNypmCentTbGDElHX6Me4FtZTBGYPSAF2AYxT9knVaGMzYXWFEsGwQKOmfdr2jE4fw9xjxyWK7mFnzQVIk_ncmpw/p.png)

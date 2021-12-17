@@ -75,7 +75,7 @@ self.suprAd.delegate = self;
 
 ### Step 3: Register AdView and TKMediaView
 
-If you'd like to use** screen width** as ad-view width, we recommend using `preferedMediaViewSize` for calculating the corresponding ad-view height.
+If you'd like to use **screen width** as ad-view width, we recommend using `preferedMediaViewSize` for calculating the corresponding ad-view height.
 
 ```objectivec
 -(void)TKAdSuprAd:(TKAdSuprAd *)suprAd didReceivedAdWithAdData:(NSDictionary *)adData preferedMediaViewSize:(CGSize)size isVideoAd{
@@ -153,9 +153,9 @@ This function will destroy ads completely. In the condition that`TKAdSuprAd`mana
 
 * Top View & IMA SDK
 
-Supr.Ad including video ad advertising, which uses VAST technology provided by the Google IMA SDK. In the implementation of VAST, AotterTrek iOS SDK needs to register _ViewController_ when requesting VAST ads from Google IMA. In the meantime, Google IMA SDK will compare _**TopViewController**_ with _**the ViewController shows ads**_. _This_ _ViewController_ should be** **_**the same** ViewController that displays the video ads!_ If it's not the same one, might lead to a **CRASH** in your app but cause by Google IMA SDK.
+Supr.Ad including video ad advertising, which uses VAST technology provided by the Google IMA SDK. In the implementation of VAST, AotterTrek iOS SDK needs to register _ViewController_ when requesting VAST ads from Google IMA. In the meantime, Google IMA SDK will compare _**TopViewController**_ with _**the ViewController shows ads**_. _This_ _ViewController_ should be _**the same**_ ViewController that displays the video ads!_ If it's not the same one, might lead to a **CRASH** in your app but cause by Google IMA SDK.
 
-![](<../../.gitbook/assets/截圖 2021-09-23 下午12.18.13.png>)
+![](https://previews.dropbox.com/p/thumb/ABZNIClsq0pb7vYGGYP8-RRDXAKY-0XTMqhiiV5Mvsq0ssmpJWfcBJCh9aa9NkOxTFeAaPtm5P7hGLGGY9zWHUotIsFUUByP_OaR4UthYskhE0Z4kCx6jCbErXcJR8YAMs33k6hyjCIsaDrlecVC9_5WlZUdmFa2-sMvKXCvI6F_nnAfizULn3XvCrThFiT1-UGQi5OG3wXvjAmxQUnTBBqIxo2qENXBO3S6OV-rHKuNrKnlhRByekNQq9rpirFtwygN243zJlZbxnqzYlTp5j5LBFyzyUzI_8Pz1isDUOc7RxTtn6FtUFDg7SM-pntJHbzA6Xj7A1i2ZHyFh_ecaW1nB6nRYQW6jlUUdqdAz0_RBg/p.png)
 
 | Request Ads        | Display Ads        | Position                             | Functional |
 | ------------------ | ------------------ | ------------------------------------ | ---------- |
@@ -163,4 +163,4 @@ Supr.Ad including video ad advertising, which uses VAST technology provided by t
 | "A" ViewController | "A" ViewController | other ViewController on the very top | **No**     |
 | "A" ViewController | "B" ViewController |                                      | **No**     |
 
-That is to say,  _**the ViewController**_** must be on the very top of the view**. Also, please make sure there is no _other ViewController_ such as `UIAlertController` / `CustomViewController` layover it.
+That is to say,  _**the ViewController**_ must be on the very top of the view. Also, please make sure there is no _other ViewController_ such as `UIAlertController` / `CustomViewController` layover it.

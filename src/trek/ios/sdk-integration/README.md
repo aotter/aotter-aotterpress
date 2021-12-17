@@ -4,25 +4,22 @@ Find out what is the prerequisites and how to initialize SDK, and then check out
 
 ### Prerequisites
 
-{% content-ref url="prerequisites.md" %}
-[prerequisites.md](prerequisites.md)
-{% endcontent-ref %}
+<link-component title="prerequisites" link="../sdk-integration/prerequisites"/>
+
 
 ### Install SDK
 
-{% content-ref url="installation.md" %}
-[installation.md](installation.md)
-{% endcontent-ref %}
+<link-component title="installation" link="../sdk-integration/installation"/>
 
 ### Ad Formats
 
-{% content-ref url="../ad-formats/" %}
-[ad-formats](../ad-formats/)
-{% endcontent-ref %}
 
-### Changelogs
+<link-component title="ad-formats" link="../ad-formats"/>
 
-{% content-ref url="../changelog.md" %}
-[changelog.md](../changelog.md)
-{% endcontent-ref %}
+### Change Logs
+
+
+<link-component title="Change logs" link="../changelog"/>
+
+
 

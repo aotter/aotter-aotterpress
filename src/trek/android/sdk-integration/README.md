@@ -8,27 +8,22 @@ Find out what is the prerequisites and how to initialize SDK, and then check out
 
 ### Prerequisites
 
-{% content-ref url="prerequisites.md" %}
-[prerequisites.md](prerequisites.md)
-{% endcontent-ref %}
+<link-component title="prerequisites" link="../sdk-integration/prerequisites"/>
+
 
 ### Install SDK
 
-{% content-ref url="installation.md" %}
-[installation.md](installation.md)
-{% endcontent-ref %}
+<link-component title="installation" link="../sdk-integration/installation"/>
 
 ### Ad Formats
 
-{% content-ref url="../ad-formats/" %}
-[ad-formats](../ad-formats/)
-{% endcontent-ref %}
+
+<link-component title="ad-formats" link="../ad-formats"/>
 
 ### Change Logs
 
-{% content-ref url="../changelog.md" %}
-[changelog.md](../changelog.md)
-{% endcontent-ref %}
+
+<link-component title="Change logs" link="../changelog"/>
 
 
 
@@ -36,7 +31,6 @@ If you're looking for Android SDK version 3, Check out the page link below.
 
 ### Legacy SDK (version 3)
 
-{% content-ref url="../../legacy-android-sdk/" %}
-[legacy-android-sdk](../../legacy-android-sdk/)
-{% endcontent-ref %}
+<link-component title="Legacy Android SDK" link="../legacy-android-sdk/"/>
+
 

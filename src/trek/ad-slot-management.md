@@ -1,8 +1,10 @@
+---
+title: Ad Slot Management
+---
+
 # 🎉 Ad Slot Management
 
-## [Release Note] Ad Slot Management for Publishers <a href="release-note-ad-slot-management-for-publishers" id="release-note-ad-slot-management-for-publishers"></a>
-
-#### Hello 各位開發者 <a href="hello-ge-wei-kai-fa-zhe" id="hello-ge-wei-kai-fa-zhe"></a>
+#### Hello 各位開發者
 
 在此通知大家，**AotterTrek** 的**全新版位管理系統**已經上線囉～🎉
 
@@ -21,21 +23,20 @@
 
 進入列表後，您會發現在廣告開通狀態欄中多了**版位管理** (僅限已開通狀態)。
 
-![](https://user-images.githubusercontent.com/48562635/117430534-d1ff0280-af5a-11eb-814e-77c9238f6d0d.jpeg)
+![](https://previews.dropbox.com/p/thumb/ABYCJnjk16a25bF7VvcGMjXn74ZwbCU0wafqygq8IibqU7rhINzP-5e7hu0v7jZmoRHYWjsfrd5M_doFgwxoN9Qi7Jq66zLLAHkrt448aDQ6YiuLmUv9MN0DFwFCNsJ2d8DWFbUwq0xTuGozx2LX2p__QlmnReRnIxUrg5R05aVSOLo99EM6CJI0isVmC40Bz19UYeS_MAb5hXEEebsyeECjVYtQf0zahPXZjg7hyB5MrQreNkyBIJe0JsN7Jld_9twMHO4MSJzV95uRe4wlc1maCYTJiw1rnZLR2dWDOXKhpWf1nHZv2EwGzDxCnJ29ptMtQZdJyezCLsaMSvsRnwVIMbHVYOOnCgHCsJUJVIt4UA/p.jpeg)
 
 點擊進入後，您可以點選右上角的 ✚ **新增版位** ，並填入版位名稱、類型、大小
 
 我們分別提供了**三種廣告類型**以符合您的各種需求：**Supr.Ad**、**原生廣告**、**橫幅廣告**
 
-| ![agU3epW9](.gitbook/assets/UUID空.jpg) | ![tmnh-Ptg](.gitbook/assets/iOS\_BannerAd.png) |
+| ![agU3epW9](https://previews.dropbox.com/p/thumb/ABZReku5LKetMFp7DK-qC1ZGgMkwasDP59DQnVzib0kjvE6cv0fZT_NkqndsNbTWEc5JeRVGwUIizYnrRf8fU0XPCUfSiuzJfrDJHzsiv6cc7eCR5axItUexDIvFSHJK_ZQ58pLM6cevXA8HNWAPtmGJqwTzEMZscG2x6jUcOSTXUNduEXaqz_LVlkE3JiZxjbtycKQlgRGx6i8lL8p0sK1luOiGgP2pLc9T3W5VfOfuC1x97SMntuLmn-Sd5L6J7bftGo4WDExaWq0KupkAMwUGlcqvXOoTsEr9kLsPUHe6mzedmzuItrS-EC4MUx45Os0nSvTvZ3UxHn_RWmagz7MFtoNigFY0-jQ4BrrBujhZqA/p.jpeg) | ![tmnh-Ptg](https://previews.dropbox.com/p/thumb/ABZy-0Vm_XQMvGPlN0EF0ia3Y7iZSBkmmrvYhQc6fPbTB_G2h3XyWwhfvZKlRja_j3ojNFjB-gedA-QWqc62NH2DMj2607tngZ9But_CmFeig0ZZqlE3Ip_LmY-gAORQhUVOYLkC5LZ-aLNC9tJLjHAGY3ggdhSuKb6C5K2fr5CbMOznDfEY1Ex004Fa0J60GeSN4WIUQf53PCxHjRii_Q5jClABh_k2ObFdhkSxBoTdzImMZICHgUrlG6f-tvlRkHmNR3Fk0KHtJanRfNU0EEba0QJzc-8goqsdhykuGYXsWuRSvXIL-_O0ldr0byK32nM1GYm7nMSeIIQ37rW98kpOkyd9NPiYzJlRsPpCu-RkRw/p.png) |
 | -------------------------------------- | ---------------------------------------------- |
 
-{% hint style="warning" %}
-✨** **需要您特別注意的是 :\
+::: danger
 1\. **廣告版位名稱可使用 a - z, 0 - 9,  \_**，**請勿使用中文名稱。**\
 ****2.** **廣告請求時需帶入**版位** **UUID**，目前已不需要帶入版位名稱。\
 3\. 切換正式 / 測試環境只需要更換 client Id 即可。
-{% endhint %}
+:::
 
 **2. 管理現有廣告版位**
 
@@ -47,4 +48,4 @@
 
 如果您有建立新廣告版位的需求，一樣可以點選右上角的 ✚ 新增版位。
 
-![](<.gitbook/assets/UUID 現有版位.png>)
+![](https://previews.dropbox.com/p/thumb/ABYWNe3gfDM-rQlNH-kViGi1m-nrU0DUYAiVVxtNCjvHhGRKg_JRKuYzKCj_58jONfbP6AJBMIydDWXNstfv7FLIfm8YF1DJlVGVYFtXJrdy8q1qags6pXt64p5LEX1TgTLGHlLsd0alDIyu6u9Dk8dAQMTrFwrgf7XW8Ou2u2K3Q2neY-LjE4DPDSlPL0zJqeYLiYW6NalMEAh-Wxf_VgQCFDAluMJnee4toXjBWDHduSulQfSyIs9-q288UwpOMIcDFWYpqGH40NO8zEpgdicTny_0lxEyhp9ixmPvVhbF8KpwmKeBo7kXDJwt-FmzcYOycozr_PixWI7Cb9zQCBzk5_xXmus7366R20yxA-XNVw/p.png)

@@ -2,7 +2,7 @@
 
 Besides [sending user's info](user-setting.md) to AotterTrek for a better ad experience to your users, we provide an advanced service _Tracker._ Base on `User`, `Entity` and `Action` data, our system will use these data for **user profiling**. AotterTrek groups these users with similar behavior and send them personalized ads that improve advertising relevance for users and increases revenue for you.
 
-## Guide
+### Guide
 
 A tracker event usually contains the following attributes.
 
@@ -14,8 +14,8 @@ A tracker event usually contains the following attributes.
 | `userObject`                  | The person/user who involve in this event               | no       |
 | `locationObject`              | The position that this event occurs                     | no       |
 
-{% tabs %}
-{% tab title="Action Types" %}
+
+::: details Action Types
 | _**Action Types**_      | Description                                     |
 | ----------------------- | ----------------------------------------------- |
 | `kTKTTypeREAD_POST`     | when user reads a post or article               |
@@ -25,9 +25,9 @@ A tracker event usually contains the following attributes.
 | `kTKTTypeWATCH_VIDEO`   | when user watches a video                       |
 | `kTKTTypeCALL_MERCHANT` | When user calls a merchant                      |
 | `kTKTTypeBUY_ITEM`      | when user buy an item                           |
-{% endtab %}
+:::
 
-{% tab title="Entity Types" %}
+::: details Entity Types
 | Entity types            |
 | ----------------------- |
 | `kTKEntityTypePOST`     |
@@ -37,8 +37,7 @@ A tracker event usually contains the following attributes.
 | `kTKEntityTypeVIDEO`    |
 | `kTKEntityTypeMERCHANT` |
 | `kTKEntityTypeITEM`     |
-{% endtab %}
-{% endtabs %}
+:::
 
 **Follow the following steps to send a tracker event.**
 
@@ -94,13 +93,13 @@ Exit tracker item if the tracker event has finished its action. For Example, whe
 [[TKTracker sharedAPI] trackerExitItem:@"myPostId"];
 ```
 
-### Step 5. Send Tracker Items <a href="step-5-send-tracker-items" id="step-5-send-tracker-items"></a>
+### Step 5. Send Tracker Items 
 
 ```objectivec
 [[TKTracker sharedAPI] trackerSendItems];        
 ```
 
-## Full Example <a href="example" id="example"></a>
+### Full Example 
 
 ```objectivec
 -(void)engageItemAndSend{

@@ -11,27 +11,26 @@ Step 4: [Send Tracker](tracker.md#step-4-send-tracker-to-aottertrek-server)
 
 Notice that you should initialize `AotterTrek.TrackerService` before using _Tracker_, otherwise, an exception will be thrown.
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 var tracker = AotterTrek.trackerService(context)
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 Tracker tracker = AotterTrek.INSTANCE.trackerService(context);
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
+
 
 ### Step 2: Create `Entity` / `User` Object Instance
 
-{% tabs %}
-{% tab title="Entity" %}
-The following table shows **entity** constructor parameters which including basic information about the entity such us `id`, `title` and `type` and so on.
+::: details Entity constructor parameter
 
-#### Entity constructor parameter
+The following table shows **entity** constructor parameters which including basic information about the entity such us `id`, `title` and `type` and so on.
 
 | Name         | Type          | description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | ------------ | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -42,12 +41,11 @@ The following table shows **entity** constructor parameters which including basi
 | `categories` | List\<String> |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | `tags`       | List\<String> |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | `meta`       | JsonObject    | <p><code>val jsonObject = JsonObject() //Kotlin</code></p><p><code>JsonObject jsonObject  = new JsonObject()  // Java         </code></p><p></p><p>Options:</p><p><code>jsonObject.addProperty(TrekDataKey.REFERENCE,VALUE) //Ex: "dips" jsonObject.addProperty(TrekDataKey.PUBLISHED_DATE,VALUE)//Ex:1438090882490L jsonObject.addProperty(TrekDataKey.IMG,VALUE)//Ex:"http://pnn.aotter.net/Media/show/cna.jpg"</code></p><p><code>jsonObject.addProperty(TrekDataKey.AUTHOR,VALUE)//Ex: "skybear" </code></p><p><code>jsonObject.addProperty(TrekDataKey.ADDRESS,VALUE)//Ex: "105台北市松山區南京東路四段2號" </code></p><p><code>jsonObject.addProperty(TrekDataKey.LAT, VALUE)//Ex: 25.0463684 </code></p><p><code>jsonObject.addProperty(TrekDataKey.LNG, VALUE)//Ex: 121.5501565</code></p> |
-{% endtab %}
+:::
 
-{% tab title="User" %}
+::: details User constructor parameter
 The following table shows the **user**`birthday`, `email` and `gender` and so on.
 
-#### User constructor parameter
 
 | Name       | Type       | description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ---------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -57,13 +55,12 @@ The following table shows the **user**`birthday`, `email` and `gender` and so on
 | `gender`   | String     | "M" for male, "F" for female                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | `phone`    | String     | Ex: "09XXXXXXXXX"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | `meta`     | JsonObject | <p><code>val jsonObject = JsonObject() //Kotlin</code></p><p><code>JsonObject jsonObject  = new JsonObject()  // Java</code></p><p></p><p><code>//add you want to define key and value</code></p><p><code>jsonObject.add(KEY, VALUE)            </code>                       <br><code>jsonObject.add(KEY, VALUE)            </code><br><code>//or                                  </code><br><code>jsonObject.addProperty(KEY, VALUE)    </code><br><code>jsonObject.addProperty(KEY, VALUE)</code><br><code></code><br><code>Ex:</code><br><code>jsonObject.addProperty("publishedDate", 123456L) </code></p><p><code>jsonObject.addProperty("reference", "aotter")</code></p> |
-{% endtab %}
-{% endtabs %}
+:::
 
 #### - Entity Object
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 val entity = Entity(
    "00-00000-00000-0", //id
@@ -75,9 +72,9 @@ val entity = Entity(
    jsonObject //meta
 )
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 Entity entity = new Entity(
    "00-00000-00000-0", //id
@@ -89,13 +86,14 @@ Entity entity = new Entity(
    jsonObject //meta
 );
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
+
 
 #### **- User Object**
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 val user = User(
     "1999/9/9", //birthday
@@ -106,9 +104,9 @@ val user = User(
     jsonObject, //meta
 )
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 User user = new User(
     "1999/9/9", //birthday
@@ -119,19 +117,20 @@ User user = new User(
     jsonObject, //meta
 )
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>
+
 
 ### Step 3: Choose Action Types
 
 | setActionType | Description                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `ActionType`  | <p>The parameter type of the actionType:</p><p></p><p>ActionType.READ_POST.action</p><p>ActionType.CREATE_POST.action</p><p>ActionType.INITIAL_USAGE.action</p><p>ActionType.VISIT_PLACE.action</p><p>ActionType.PLAY_GAME.action</p><p>ActionType.LISTEN_MUSIC.action</p><p>ActionType.WATCH_VIDEO.action</p><p>ActionType.CALL_MERCHANT.action</p><p>ActionType.BUY_ITEM.action</p><p>ActionType.UNKNOWN.action</p><p></p> |
+| `ActionType`  | <p>The parameter type of the actionType:</p><p></p><p>`ActionType.READ_POST.action`</p><p>`ActionType.CREATE_POST.action`</p><p>`ActionType.INITIAL_USAGE.action`</p><p>`ActionType.VISIT_PLACE.action`</p><p>`ActionType.PLAY_GAME.action`</p><p>`ActionType.LISTEN_MUSIC.action`</p><p>`ActionType.WATCH_VIDEO.action`</p><p>`ActionType.CALL_MERCHANT.action`</p><p>`ActionType.BUY_ITEM.action`</p><p>`ActionType.UNKNOWN.action`</p><p></p> |
 
 ### Step 4: Send Tracker to AotterTrek Server
 
-{% tabs %}
-{% tab title="Kotlin" %}
+<code-group>
+<code-block title="Kotlin" active>
 ```kotlin
 tracker
      .timeSpan(1) //[Integer Type] seconds
@@ -140,16 +139,16 @@ tracker
      .setActionType(ActionType.READ_POST)
      .sendTrackerReport()
 ```
-{% endtab %}
+</code-block>
 
-{% tab title="Java" %}
+<code-block title="Java">
 ```java
 tracker
      .timeSpan(1) //[Integer Type] seconds 
-     .setUser(user) // If you have not set user, you can set new User().
+     .setUser(user) // If you haven't set user, you can set new User().
      .setEntity(entity)
      .setActionType(ActionType.READ_POST.INSTANCE)
      .sendTrackerReport()
 ```
-{% endtab %}
-{% endtabs %}
+</code-block>
+</code-group>

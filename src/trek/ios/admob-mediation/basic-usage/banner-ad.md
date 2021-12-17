@@ -3,7 +3,7 @@
 Follow these steps to build a banner ad layout and then requests it.
 
 Step 1: [Initialize AotterTrek SDK](banner-ad.md#step-1-initialize-aottertrek-sdk)\
-Step 2: [Customize _ViewController_](banner-ad.md#step-2-customize-viewcontroller)__
+Step 2: [Customize _ViewController_](banner-ad.md#step-2-customize-viewcontroller)
 
 ### Step 1: Initialize AotterTrek SDK&#x20;
 
