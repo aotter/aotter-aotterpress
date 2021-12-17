@@ -91,7 +91,7 @@ var trekAd:TrekAd = AotterTrek.trekService(context)
 ```
 </code-block>
 
-<code-block title="Java" active>
+<code-block title="Java">
 ```java
 // Version 4.x
 TrekAd trekAd = AotterTrek.INSTANCE.trekService(context);
@@ -130,7 +130,7 @@ trekAd
 ```
 </code-block>
 
-<code-block title="Java" active>
+<code-block title="Java">
 ```java
 // Version 4.x
 trekAd
