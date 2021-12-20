@@ -110,7 +110,7 @@ NS_ASSUME_NONNULL_END
 \- **YourViewController**
 
 ::: details YourViewController.m
-#### **- GoogleMobileAds SDK version 8 and above**
+\- **GoogleMobileAds SDK version 8 and above**
 
 ```swift
 // Define the display position of the ad in the TableView

@@ -1,6 +1,6 @@
 # Changelog
 
-## 2021/12/01 release - SDK 4.3.2
+## 2021/12/01 release - SDK `4.3.2`
 
 * Support android 12
 * Support kotlin version 1.5.31

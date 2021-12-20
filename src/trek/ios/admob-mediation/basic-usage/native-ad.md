@@ -128,7 +128,7 @@ NS_ASSUME_NONNULL_END
 ::: details YourViewController.m
 Rendering the ad view process:
 
-#### **- GoogleMobileAds SDK version 8 and above**
+\- **GoogleMobileAds SDK version 8 and above**
 
 ```objectivec
 // Define the display position of the ad in the TableView
