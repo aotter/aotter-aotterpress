@@ -4,8 +4,8 @@
 
 ## Authentication
 APIkey-based Basic Auth
-  - username: `beanfun`
-  - password: `eyJjb2RlbmFtZSI6ImJlYW5mdW4iLCJhb3R0ZXJJZCI6IjVjNGZmZTYwNWNhZmQ0MDc0MzlmZDRiZiIsInRzIjoxNTY2OTE1NzYxNTg0fQ==`
+  - username: `{your username}`
+  - password: `{your password token}`
 
 ## Create link if Missing
 ### `POST` `https://bean.fun/api/link/create_if_missing`
